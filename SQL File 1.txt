@@ -1,0 +1,42 @@
+use testdb;
+
+-- Task 1
+-- select name, email
+-- from users;
+
+
+-- Task 2
+-- update users
+-- set email = 'athur.voitkiv@gmail.com'
+-- where id = 1;
+
+-- select email
+-- from users
+-- where id = 1;
+
+
+-- Task 3
+-- delete 
+-- from users
+-- where id = 3;
+
+
+-- Task 4
+-- select * 
+-- from users
+-- where age > 20
+-- order by name;
+
+-- Task 5
+-- select * 
+-- from users
+-- where name like '%le'
+
+-- select *
+-- from users
+-- where age > 20 and age < 30;
+
+-- select * 
+-- from users
+-- order by id
+-- limit 3;

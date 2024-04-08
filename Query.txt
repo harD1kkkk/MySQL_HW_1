@@ -1,0 +1,31 @@
+use testdb;
+
+drop table if exists users;
+drop table if exists products;
+
+create table if not exists users(
+id serial primary key,
+name varchar(255),
+email varchar(255),
+age int
+);
+
+insert into users(name, email, age) values
+('oleksandr', 'oleksandr@gmail.com', 21),
+('mykola', 'mykola@gmail.com', 100),
+('volodymyr', 'volodymyr@gmail.com', 14),
+('dmytro', 'dmytro@gmail.com', 20),
+('serhiyle', 'serhiy@gmail.com', 60);
+
+
+create table if not exists products(
+id serial primary key,
+name varchar(255),
+description text,
+price numeric(10,2)
+);
+
+insert into products(name, description, price) values
+('apple', null, 1200),
+('legoro', 'children toy', 300),
+('lion', 'this stuffed animal', 150);
